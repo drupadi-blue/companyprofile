@@ -1,0 +1,249 @@
+
+:root {
+  --pr-color: #74C476;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #FAFFF9;
+}
+/* Navbar Style */
+.navbar{
+    z-index: 3;
+}
+/*Navbar color*/
+.nav-color{
+    background-color: var(--pr-color);
+}
+*{
+    z-index: 2;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav-link{
+    font-weight: 16px;
+}
+.nav-link.active {
+  font-weight: bold;
+}
+.button-secondary {
+    width: 133px;
+    height: 40px;
+  background-color: white;
+  color: var(--pr-color);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+.button-primary {
+    width: 133px;
+    height: 40px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+/* Hero Style */
+#hero  {
+  background : linear-gradient(160deg, var(--pr-color), #000);
+    height: 100vh;
+    width: 100%;
+}
+.hero-tagline h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 72px;
+}
+.hero-tagline p{
+    color: white;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 85%;
+}
+.button-lg-primary{
+    width: 237px;
+    height: 70px;
+    background-color: #fff;
+    color: var(--pr-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Layanan Section */
+#layanan{
+    padding: 100px 0;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--pr-color);
+}
+
+.sub-title{
+    font-size: 25px;
+    color: #000;
+}
+
+.card-layanan {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+    color: white; /* Ensure text color is set for default */
+    transition: all.2s ease-in-out;
+}
+
+.circle-icon{
+    width: 70px;
+    height: 70px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    transition: all.1s ease-in-out;
+}
+
+.card-layanan h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--pr-color);
+    transition: all.2s ease-in-out;
+}
+
+.card-layanan p{
+    font-size: 18px;
+    color: black; /* Ensure white color is specified here */
+    transition: all.3s ease-in-out;
+}
+
+/*Hover Effects*/
+.card-layanan:hover {
+    background: linear-gradient(160deg, #74C476, rgb(46, 46, 46));
+    transition: all.2s ease-in-out;
+    /* Corrected gradient */
+    /* Remove redundant properties */
+    /* width: 100%; height: 313px; border-radius: 5px; padding: 40px; box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05); */
+}
+.card-layanan:hover .circle-icon {
+    background-color: white; 
+    transition: all.2s ease-in-out;
+    /* No need for width/height as those are fixed */
+}
+.card-layanan:hover h3 { 
+    color: white; 
+    transition: all.2s ease-in-out;
+    /* Specify the color change for the paragraph text on hover */
+}
+.card-layanan:hover p { 
+    color: white; 
+    transition: all.2s ease-in-out;
+    /* Specify the color change for the paragraph text on hover */
+}
+/*Search Section*/
+#search{
+    background-image: url(../assest/search.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#search h2{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 72px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0em;
+}
+#search p{
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0em;
+}
+.card-contact {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 20px; /* Add some space between sections */
+}
+
+.d-flex.justify-content-end {
+    justify-content: space-between; /* Space out social media icons for better visual appearance */
+}
+
+.social-icon {
+    text-align: right; /* Ensure icons are aligned right */
+}
+/*Contact Section*/
+#contact h3{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+#contact p{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+#contact h6{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.card-contact{
+    width: 100%;
+    height: 500px;
+    background-color: var(--pr-color);
+    border-radius: 5px;
+    padding: 52px 48px ;
+    max-width: 500px; /* or any value you prefer */
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-contact h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.button-lg-primary {
+    width: 237px;
+    height: 70px;
+    background-color: black; /* Use pr-color */
+    color: #fff; /* White text */
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer{
+    background-color: var(--pr-color);
+    width: 100%;
+    height: 270px;
+    color: #fff !important;
+}
+.copyright{
+    bottom: 1%;
+    color: black;
+     
+}
+footer a{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: white !important;
+    
+}
+
